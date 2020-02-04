@@ -31,10 +31,10 @@ export class PeopleLayoutComponent implements OnInit {
 
     compare() {
       let message: string;
-      if (this.leftPlayer.mass > this.rightPlayer.mass) {
+      if (+this.leftPlayer.mass > +this.rightPlayer.mass) {
         message = 'The winner is left player.'
         this.leftWins++;
-      } else if (this.leftPlayer.mass < this.rightPlayer.mass) {
+      } else if (+this.leftPlayer.mass < +this.rightPlayer.mass) {
         message = 'The winner is right player.'
         this.rightWins++;
       } else {
