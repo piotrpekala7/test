@@ -1,0 +1,16 @@
+<mat-card class="example-card" *ngIf="player">
+    <mat-card-header>
+      <mat-card-title>{{player.name}}</mat-card-title>
+      <mat-card-subtitle>{{player.gender}}</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content *ngIf="details">
+        <mat-list>
+            <mat-list-item>Height: {{player.height}}</mat-list-item>
+            <mat-list-item>Birth year: {{player.birth_year}}</mat-list-item>
+            <mat-list-item>Eye color: {{player.eye_color}}</mat-list-item>
+            <mat-list-item>Hair color: {{player.hair_color}}</mat-list-item>
+            <mat-list-item>Skin color: {{player.skin_color}}</mat-list-item>
+            <mat-list-item>Homeworld: {{player.homeworld}}</mat-list-item>
+        </mat-list>
+    </mat-card-content>
+</mat-card>
